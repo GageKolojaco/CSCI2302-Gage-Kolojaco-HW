@@ -1,16 +1,5 @@
 package Chapter09;
 
-//UML Class Diagram                     
-/**************************************************
-*               Rectangle                         *  
-* ------------------------------------------------*  
-* width: double                                   *
-* height: double                                  * 
-* Rectangle()                                     *  
-* Rectangle(newWidth: double, newHeight: double)  *
-* getArea(): double                               *
-* getPerimeter(): double                          *
-***************************************************/
 public class Rectangle {
 	double width;	// Width of rectangle
 	double height;	// Height of rectangle
