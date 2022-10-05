@@ -17,12 +17,12 @@ package Chapter09;
 * and perimeter of each rectangle in this order.                                 *
 *********************************************************************************/
 public class Exercise09_01 {
-	/** Main method */
+
 	public static void main(String[] args) {
-		// Create a Rectangle with width 4 and height 40
+		// create a rectangle with width 4 and height 40
 		Rectangle rectangle1 = new Rectangle(4, 40);
 
-		// Create a Rectangle with width 3.5 and height 35.9
+		// create a rectangle with width 3.5 and height 35.9
 		Rectangle rectangle2 = new Rectangle(3.5, 35.9);
 
 		// Display the width, height, area, and perimeter of rectangle1
