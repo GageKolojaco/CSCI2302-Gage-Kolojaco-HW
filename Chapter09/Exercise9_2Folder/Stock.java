@@ -6,10 +6,15 @@ public class Stock {
 	double previousClosingPrice;	
 	double currentPrice;	
 
-	Stock(String newSymbol, String newName) {
-		symbol = newSymbol;
-		name = newName;
-	}
+	public Stock(double previousClosingPrice, double currentPrice) {
+        this.previousClosingPrice = previousClosingPrice;
+        this.currentPrice = currentPrice;
+    }
+
+    public Stock(String symbol, String name) {
+        this.symbol = symbol;
+        this.name = name;
+    }
 
 	double getChangePercent() {
 		return ((currentPrice - previousClosingPrice) / 
