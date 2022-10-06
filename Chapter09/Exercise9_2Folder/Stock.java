@@ -10,12 +10,10 @@ public class Stock {
         this.previousClosingPrice = previousClosingPrice;
         this.currentPrice = currentPrice;
     }
-
     public Stock(String symbol, String name) {
         this.symbol = symbol;
         this.name = name;
     }
-
 	double getChangePercent() {
 		return ((currentPrice - previousClosingPrice) / 
 					previousClosingPrice) * 100;
