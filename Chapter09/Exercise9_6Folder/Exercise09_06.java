@@ -1,44 +1,43 @@
-public static void main(String[] args) {
-    StopWatch stopWatch = new StopWatch();
+package Chapter09.Exercise9_6Folder;
 
-    int[] randomArray = getArray();
+public class Exercise09_06 {
+    public static void main(String[] args) {
+        
+        int[] randomArray = new int[100000];
 
-    stopWatch.start();
+        System.out.println("Creating an unsorted array of 100,000 numbers...");
+        for (int i = 0; i < randomArray.length; i++) {
+            randomArray[i] = (int) (Math.random() * 100000);
+        }
 
-    selectionSort(randomArray);
+        StopWatch stopWatch = new StopWatch();
 
-    stopWatch.stop();
+        System.out.println("Sorting array using selection algorithm...");
+        stopWatch.start();
+        selectionSort(randomArray);
+        stopWatch.stop();
+        System.out.println("Time elapsed: " + stopWatch.getElapsedTime() + " milliseconds.");
 
-    System.out.println("The execution time of sorting 100,000 " +
-        "numbers using selection sort: " + stopWatch.getElapsedTime() +
-        " milliseconds");
-}
-
-
-public static int[] getArray() {
-
-    int[] array = new int[100000];
-    for (int i = 0; i < array.length; i++) {
-        array[i] = (int)(Math.random() * 100000);
+        for (int i = 0; i < randomArray.length; i++) {
+            System.out.printf("%6d ", randomArray[i]);
+            if ((i + 1) % 10 == 0) System.out.printf("\n");
+        }
     }
-    return array;
-}
+    public static void selectionSort(int[] m) {
+        for (int i = 0; i < m.length - 1; i++) {
+            int currentMin = m[i];
+            int currentIndex = i;
 
-public static void selectionSort(int[] array) {
-    for (int i = 0; i < array.length - 1; i++) {
-        int min = array[i];
-        int minIndex = i;
-
-        for (int j = i + 1; j < array.length; j++) {
-            if (array[j] < min) {
-                min = array[j];
-                minIndex = j;
+            for (int j = i + 1; j < m.length; j++) {
+                if (currentMin > m[j]) {
+                    currentMin = m[j];
+                    currentIndex = j;
+                }
+            }
+            if (currentIndex != i) {
+                m[currentIndex] = m[i];
+                m[i] = currentMin;
             }
         }
-
-        if (i != minIndex) {
-            array[minIndex] = array[i];
-            array[i] = min;
-        }
     }
-} 
+}

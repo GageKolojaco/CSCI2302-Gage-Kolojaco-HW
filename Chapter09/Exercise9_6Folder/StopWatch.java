@@ -4,6 +4,9 @@ public class StopWatch {
     private long startTime; 
 	private long endTime;	
 
+	public StopWatch(long startTime) {
+		this.startTime = startTime;
+	}
 	StopWatch() {
 		startTime = System.currentTimeMillis();
 	}
@@ -14,9 +17,9 @@ public class StopWatch {
 		endTime = System.currentTimeMillis();
 	}
 	public long getElapsedTime() {
-		return getEndTime() - getStratTime();
+		return getEndTime() - getStartTime();
 	}
-	public long getStratTime() {
+	public long getStartTime() {
 		return startTime;
 	}
 	public long getEndTime() {
