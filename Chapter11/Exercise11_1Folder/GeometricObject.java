@@ -1,9 +1,19 @@
+package Chapter11.Exercise11_1Folder;
+
+import java.util.Date;
 
 public class GeometricObject {
     private String color = "white";
 	private boolean filled;
 	private java.util.Date dateCreated;
 
+	public GeometricObject(Date dateCreated) {
+		this.dateCreated = dateCreated;
+	}
+	public GeometricObject(String color, boolean filled) {
+		this.color = color;
+		this.filled = filled;
+	}
 	public GeometricObject() {
 		dateCreated = new java.util.Date();
 	}

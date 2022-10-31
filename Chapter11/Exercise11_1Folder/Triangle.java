@@ -1,7 +1,6 @@
-package Chapter11.Chapter11_1Folder;
+package Chapter11.Exercise11_1Folder;
 
 public class Triangle {
-    extends GeometricObject {
         private double side1;
         private double side2;
         private double side3;
@@ -32,5 +31,15 @@ public class Triangle {
         public String toString() {
             return "Triangle: side1 = " + side1 + " side2 = " + side2 +
                 " side3 = " + side3;
+        }
+        public void setFilled(boolean filled) {
+        }
+        public void setColor(String color) {
+        }
+        public boolean isFilled() {
+            return false;
+        }
+        public String getColor() {
+            return null;
         }
 }
