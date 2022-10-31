@@ -2,7 +2,6 @@ package Chapter09.Exercise9_8Folder;
 
 public class Exercise09_08 {
     public static void main(String[] args) {
-		final int SLOW = 1;		// Fan speed slow
 		final int MEDIUM = 2;	// Fan speed medium
 		final int FAST = 3;		// Fan speed fast
 
