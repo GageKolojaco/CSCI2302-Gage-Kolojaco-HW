@@ -6,8 +6,7 @@ import java.util.ArrayList;
 public class Exercise11_4 {
     public static void main(String[] args) {
 		try (Scanner input = new Scanner(System.in)) {
-            ArrayList<Integer> list = new ArrayList<Integer>();
-
+            final ArrayList<Integer> list = new ArrayList<Integer>();
             System.out.print("Enter a sequence of numbers ending wih 0: ");
             Integer number = input.nextInt();
             while (number.intValue() != 0) {
