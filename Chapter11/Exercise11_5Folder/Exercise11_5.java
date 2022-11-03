@@ -7,7 +7,7 @@ public class Exercise11_5 {
 
 		course1.addStudent("Peter Jones");
 		course1.addStudent("Kim Smith");
-		course1.addStudent("Anne kennedy");
+		course1.addStudent("Anne Kennedy");
 		course2.addStudent("Peter Jones");
 		course2.addStudent("Steve Smith");
 
