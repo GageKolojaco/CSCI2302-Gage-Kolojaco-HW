@@ -11,10 +11,7 @@ public void whichPlayer() {
 
     }
 }
-
 public char getTurn() {
     return turn;
 }
-
-
 }

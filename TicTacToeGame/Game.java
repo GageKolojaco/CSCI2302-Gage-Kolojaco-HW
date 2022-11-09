@@ -12,38 +12,27 @@ char[][] board = printB.board;
 NoPlace noPlace = new NoPlace();
 private int row, col;
 
-
 void StartGame() {
-
-
     for (int i = 0; i < 3; i++) {
         for (int j = 0; j < 3; j++) {
             board[i][j] = '_';
         }
     }
-
-
     map.printBoard();
     while (winner.Winner()) {
-
         row = input.nextInt();
         col = input.nextInt();
         if (row > 3 || col > 3) {
             System.out.println("You've inputed a place, which is outside the boundary of the board!\nTry again!");
-
         } else {
             if (fullPlace.isFull(row, col)) {
                 System.err.println("The place is taken");
-
             } else {
                 board[row - 1][col - 1] = playerChanger.getTurn();
                 map.printBoard();
                 playerChanger.whichPlayer();
             }
-
         }
-
-
     }
     playerChanger.whichPlayer();
     System.out.println("the winner is " + playerChanger.getTurn());

@@ -1,6 +1,7 @@
 package TicTacToeGame;
 
 public class FullPlace {
+    
 char[][] board = printB.board;
 
 public boolean isFull(int row, int col) {
@@ -10,6 +11,4 @@ public boolean isFull(int row, int col) {
     }
     return false;
 }
-
-
 }
