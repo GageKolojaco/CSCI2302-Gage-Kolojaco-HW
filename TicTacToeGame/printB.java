@@ -6,7 +6,7 @@ public static char[][] board = new char[3][3];
 
 public void printBoard() {
     System.out.println("-----[1]-[2]-[3]-");
-    for (int i = 0; i < 3; i++) {
+    for (int i = 0; i < board.length; i++) {
         if(i == 0)
         System.out.print("[1] | ");
         if(i == 1)
