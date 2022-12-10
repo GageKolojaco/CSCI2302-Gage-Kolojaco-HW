@@ -1,4 +1,4 @@
-package Exercise12.Exercise12_19Folder;
+package Chapter12.Exercise12_19Folder;
 
 import java.util.Scanner;
 

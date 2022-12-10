@@ -1,4 +1,4 @@
-package Exercise12.Exercise12_05Folder;
+package Chapter12.Exercise12_05Folder;
 
 public class Triangle 
 		extends GeometricObject {

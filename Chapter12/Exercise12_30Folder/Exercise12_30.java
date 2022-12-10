@@ -1,4 +1,4 @@
-package Exercise12.Exercise12_30Folder;
+package Chapter12.Exercise12_30Folder;
 
 import java.util.*;
 import java.io.*;
